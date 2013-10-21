@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="BUG_INFO" />
+	<table-filter match-name="ENV_INFO" />
+	<table-filter match-name="USER_INFO" />
+	<table name="ENV_INFO">
+		<column name="ID"></column>
+		<column name="NAME"></column>
+		<column name="RELEASE"></column>
+		<column name="USERNAME"></column>
+		<column name="PSWD"></column>
+		<column name="BUGID"></column>
+		<column name="CUSTOMER"></column>
+		<column name="CREATEDBY"></column>
+		<column name="REMARKS"></column>
+	</table>
+	<table name="BUG_INFO">
+		<column name="ID"></column>
+		<column name="STEPS"></column>
+		<column name="DEVELOPER_EFFORT"></column>
+		<column name="DESCRIPTION"></column>
+		<column name="ROOTCAUSE"></column>
+		<column name="SOLUTION"></column>
+		<column name="WORKAROUND"></column>
+		<column name="TECHNICAL_LEARNING"></column>
+		<column name="DOMAIN_LEARNING"></column>
+		<column name="STATUS"></column>
+		<column name="ENV_INFO"></column>
+		<column name="USER_ID"></column>
+	</table>
+	<table name="USER_INFO">
+		<column name="USERID"></column>
+		<column name="F_NAME"></column>
+		<column name="L_NAME"></column>
+		<column name="EMAILID"></column>
+		<column name="PSWD"></column>
+		<column name="PROJECT"></column>
+		<column name="PIC"></column>
+	</table>
+</hibernate-reverse-engineering>

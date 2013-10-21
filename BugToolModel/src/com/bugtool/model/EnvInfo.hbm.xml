@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 21, 2013 8:40:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.bugtool.model.EnvInfo" table="ENV_INFO">
+        <id name="id" type="big_decimal">
+            <column name="ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="2000" />
+        </property>
+        <property name="release" type="string">
+            <column name="RELEASE" length="2000" />
+        </property>
+        <property name="username" type="string">
+            <column name="USERNAME" length="2000" />
+        </property>
+        <property name="pswd" type="string">
+            <column name="PSWD" length="2000" />
+        </property>
+        <property name="bugid" type="string">
+            <column name="BUGID" length="2000" />
+        </property>
+        <property name="customer" type="string">
+            <column name="CUSTOMER" length="2000" />
+        </property>
+        <property name="createdby" type="string">
+            <column name="CREATEDBY" length="2000" />
+        </property>
+        <property name="remarks" type="string">
+            <column name="REMARKS" length="2000" />
+        </property>
+    </class>
+</hibernate-mapping>
