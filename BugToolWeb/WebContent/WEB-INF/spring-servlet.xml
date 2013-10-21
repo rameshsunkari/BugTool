@@ -61,5 +61,4 @@
 		</property>
 	</bean>
 	<mvc:annotation-driven/>
-	<mvc:resources location="/resources/css/" mapping="/css/**"/>
 </beans>
