@@ -10,7 +10,9 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
-	<context:component-scan base-package="com.bugtool" />
+	<context:annotation-config />
+	<context:component-scan base-package="com.bugtool.user,com.bugtool.util,com.bugtool.test" />
+	<!-- <context:component-scan base-package="com.bugtool" /> -->
 	<bean id="tielsViewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass">
@@ -61,4 +63,7 @@
 		</property>
 	</bean>
 	<mvc:annotation-driven/>
+	
+    
+	
 </beans>

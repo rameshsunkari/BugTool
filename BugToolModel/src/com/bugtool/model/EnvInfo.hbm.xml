@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Oct 21, 2013 8:40:44 PM by Hibernate Tools 4.0.0 -->
 <hibernate-mapping>
     <class name="com.bugtool.model.EnvInfo" table="ENV_INFO">
-        <id name="id" type="big_decimal">
+        <id name="id" type="java.lang.Integer">
             <column name="ID" precision="22" scale="0" />
             <generator class="assigned" />
         </id>
